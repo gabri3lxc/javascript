@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tratamento de Dados</title>
+</head>
+<body>
+    <h1>Olá, mundo</h1>
+    <p>Tratamento de dados</p>
+
+
+    <script>
+        // ex01
+        /*let name = window.prompt('Qual é seu nome?') // vai perguntar o nome
+        window.alert('É um grande prazer em te conhecer, ' + name + '!') // saida e concatenação
+        // (number + number) para adição
+        // (string + string) para concatenação
+        */
+
+
+        // ex02
+        let n2 = Number(window.prompt('Digite outro número: '))
+        let n1 = Number(window.prompt('Digite um número: '))
+        let s = n1 + n2 
+        //let s = parseInt(n1) + parseInt(n1)
+        window.alert(`A soma dos valores ${n1} e ${n2} é: ${s}`)
+
+        /*Sintaxe:
+         Number.parseInt()
+         parseInt()
+         Number()
+        */
+        
+
+        // ex03 -- formatando strings
+        let lp = 'JavaScript' 
+        document.write('Eu estou aprendendo lp <br>') // não faz interpretação
+        document.write('Eu estou aprendendo' + lp + '<br>') // usa concatenação
+        document.write(`Eu estou aprendendo ${lp} <br>`) // usa template string 
+
+
+    </script>
+</body>
+</html>
