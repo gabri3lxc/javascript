@@ -7,43 +7,92 @@
 </head>
 <body>
     <script>
-        //Função Simples
-        //function mensagemBoasVindas() {
-        //alert("Olá amigo(a) visitante. Seja bem vindo(a)!")
-        //    alert("Tudo bem")
-        //}
-        //mensagemBoasVindas();
-//
-        //function qualSeuNome() {
-        //    const nome = prompt('Qual seu nome?')
-        //    alert(`Olá, ${nome}`)
-        //}
-        //qualSeuNome()
-        //qualSeuNome()
-        //qualSeuNome()
-//
-        //Funções com Parâmetros
-        //function somaDoisNumeros(n1,n2) {
-        //    
-        //    const resul = n1 + n2
-        //    document.write(resul)
-        //    document.write("<br>")
-        //}
-        //const n1 = 10
-        //const n2 = 20
-        //somaDoisNumeros(n1,n2)
-        //somaDoisNumeros(40,90)
 
-    
-        function calcularIMC(peso, altura) {
-            const imc = peso / (altura * altura)
+/*
+        //Função Simples
+        function mensagemBoasVindas() {
+        alert("Olá amigo(a) visitante. Seja bem vindo(a)!")
+            alert("Tudo bem")
+        }
+        mensagemBoasVindas()
+        function qualSeuNome() {
+            const nome = prompt('Qual seu nome?')
+            alert(`Olá, ${nome}`)
+        }
+        qualSeuNome()
+        qualSeuNome()
+        qualSeuNome()
+*/
+
+
+/*
+        //Funções com Parâmetros
+        function somaDoisNumeros(n1,n2) {
+            
+            const resul = n1 + n2
+            document.write(resul)
+            document.write("<br>")
+        }
+        const n1 = 10
+        const n2 = 20
+        somaDoisNumeros(n1,n2)
+        somaDoisNumeros(40,90)
+        function calcularIMC(peso, altur) {
+        const imc = peso / (altur * altur)
             document.write(`Seu IMC é: ${imc}`)
         }
         const peso = Number(prompt('Qual seu peso?'))
-        const altura = Number(prompt('Qual sua altura?'))
+        const altur = Number(prompt('Qual sua altura?'))
         //calcularIMC(85, 1.85)
-        calcularIMC(peso, altura);
+        calcularIMC(peso, altur);
+*/
+
+
+/*
+        //Funções de Variável
+        const funcaoSimples = function (nome1) {
+            //bloco de codigo...... 
+            console.log(nome1)
+        }
+        funcaoSimples('Gabriel')
+
+        const funcaoSimples2 = (nome2) => {
+            //bloco de codigo......
+            console.log(nome2)
+        }
+        funcaoSimples2('Campos')
+*/
+
+
+/*
+        //Funções Chamando Funções -- Chamadas de Callback
+        function funcaoA(outrafuncao) {
+            //console.log('Função A')
+            //outrafuncao('José')
+        }
+        function funcaoB() {
+            console.log('Função B')
+        }
+        funcaoA(funcaoB)
+*/
+
+
+/*
+        // Funções com CallBack
+        function FuncaoA(outraFunction) {
+            console.log("FuncaoA executando")
+            outraFunction()
+        }
+
+        function FuncaoB() {
+            console.log("FuncaoB executando")
+        }
+        FuncaoA(FuncaoB)
+*/
+
+
+        
         
     </script>
-</body>
+</body> 
 </html>
