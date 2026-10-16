@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,16 +11,53 @@
 
     <script>
 
+/*
         //Sintaxe Básica
         if (condicao) { // Código executado SE a condição for VERDADEIRA (true)
         }
         else { // Código executado SE a condição for FALSA (false) 
         }
+*/
 
+/*
+        //Estrutura Condicional - IF e ELSE
+         
+        const n1 = Number(prompt("digite sua nota 1"))
+        const n2 = Number(prompt("digite sua nota 2"))
+        const media = (n1 + n2) / 2;
+        //const resultado = media >= 7
+         
+        //if(resultado) {
+        //    alert("passou")
+        //} else {
+        //    alert("estude mais kkkkk")
+        //}
 
-        // Aula 1 
+        if(media >= 7) {
+            alert(`Aluno Aprovado com média: ${media}`)
+        } else {
+            if(media >= 5) {
+                alert(`Aluno em Recuperação: ${media}`)
+            } else {
+                alert(`Aluno Reprovado com média: ${media}`)
+            }
+        }
+*/
+        //    Ou
 
+        const n1 = Number(prompt("digite sua nota 1"))
+        const n2 = Number(prompt("digite sua nota 2"))
+        const media = (n1 + n2) / 2;
 
+        if(media >= 7) {
+            alert(`Aluno Aprovado com média: ${media}`)
+        } else if(media >= 5) {
+            alert(`Aluno em Recuperação: ${media}`)
+        } else {
+            alert(`Aluno Reprovado com média: ${media}`)
+        }
+
+        
 
 
 
