@@ -45,33 +45,32 @@
 */
         //    Ou
 
+/*
         const n1 = Number(prompt("digite sua nota 1"))
         const n2 = Number(prompt("digite sua nota 2"))
         const media = (n1 + n2) / 2;
+        const faltas = Number(prompt("Quantidade de faltas?"))
 
-        if(media >= 7) {
+
+        if(media >= 7 && faltas <= 5) {
             alert(`Aluno Aprovado com média: ${media}`)
-        } else if(media >= 5) {
+        } else if(media >= 5 && faltas >=15) {
             alert(`Aluno em Recuperação: ${media}`)
         } else {
             alert(`Aluno Reprovado com média: ${media}`)
         }
+*/
+
+        //Operador Ternário
+        const n1 = Number(prompt("digite sua nota 1"))
+        const n2 = Number(prompt("digite sua nota 2"))
+        const media = (n1 + n2) / 2;
+        const faltas = Number(prompt("Quantidade de faltas?"))
+
+        const resultado = (media >= 7 && faltas <= 5) ? "Aprovado" : "Reprovado"
+        alert(`Aluno ${resultado} com média: ${media}`)
 
         
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     </script>
 </body>
 </html>

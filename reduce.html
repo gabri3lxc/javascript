@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Reduce
+        const notas = [7.7, 5.5, 6.6, 10]
+        // const total = notas[0] + notas[1] + notas[2] + notas[3]
+       const total = notas.reduce((valorAcumulado, valorDoArray, posicao, array) => {
+        console.log('valorAcuulado ', valorAcumulado)
+        console.log('valorDoArray ', valorDoArray)
+        console.log('posicao ', posicao)
+        console.log('Array ', array)
+
+        return valorAcumulado + valorDoArray
+       }, 0)
+       console.log(total.toFixed(2))
+       console.log("Média ", total.toFixed(2) / notas.length)
+
+
+       console.log("PRODUTOS---------------------")
+
+       const produtos = [
+            { id: 1, nome: 'Mouse USB', quantidade: 10, valor: 39.99 },
+            { id: 2, nome: 'Teclado USB', quantidade: 7, valor: 59.99 },
+            { id: 3, nome: 'Monitor 34p', quantidade: 5, valor: 2499.99 }
+        ]
+
+        const totalProdutos = produtos.reduce((valorAcumulado, valorDoArray, posicao, array) => {
+            return valorAcumulado + (item.quantidade * item.valor);
+        }, 0)
+        console.log("Total em estoque: " + totalProdutos)
+        // resolver problea no console !!!!!!
+    </script>
+</body>
+</html>

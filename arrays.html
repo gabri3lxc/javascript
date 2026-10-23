@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+    <script>
+/*
+        const alunos = ['Ana', 'Max', 'Mateus']
+        console.log(alunos[0])
+        console.log(alunos[1])
+        console.log(alunos[2])
+
+        alunos[0] = 'Bia'
+        alunos[1] = 'Kaio'
+
+        console.log(alunos[0])
+        console.log(alunos[1])
+
+        alunos.push('Leo') // add no final
+        alunos.unshift('add no inicio') // add no inicio
+        alunos.pop() // remove do final
+        alunos.shift() // remove do inicio
+
+        // Arrays de Objetos
+        const clientes = [
+            {
+                nome: 'Cliente A',
+                email: 'clienteA@email.com'
+            }, {
+                nome: 'Cliente B', 
+                email: 'clienteB@email.com'
+            }, {
+                nome: 'Cliente C',
+                email: 'clienteC@email.com'
+            }
+        ]
+
+        console.log(clientes[0])
+        const clienteB = clientes[1]
+
+        console.log(clienteB.nome)
+        console.log(clienteB.email)
+*/
+
+        // Foreach
+    /*
+        const alunos = ['Ana', 'Max', 'Mateus']
+        alunos.forEach((nome, posicao, array) => {
+            console.log("Nome " +  nome)
+            console.log("Posição " + posicao)
+            console.log("Array " + array)
+        })
+    */
+        const alunos = ['Ana', 'Max', 'Mateus']
+        alunos.forEach((nome, posicao, array) => {
+            if(nome.length >= 4) {
+                console.log(nome)
+            }
+        })
+
+        
+
+    </script>
+</body>
+</html>
